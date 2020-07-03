@@ -1,0 +1,7 @@
+
+#application.properties和application.yml都是设置项目属性的文件，二者只能存在一个就够了，它们的功能一致，只是格式不同而已
+server:
+  port: 8081
+  servlet:
+    context-path: /wuxl
+
