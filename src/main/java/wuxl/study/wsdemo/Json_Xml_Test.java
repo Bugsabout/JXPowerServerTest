@@ -18,7 +18,8 @@ public class Json_Xml_Test {
             String dxpUrl = "http://localhost:8080/services/IMarketDirService?wsdl"; //接口地址
              URL _url = new URL(dxpUrl);
              // String xmlParams="<?xml version=\"1.0\" encoding=\"UTF-8\"?><DBSET><ROW><COL NAME=\"arg0\">0014076002</COL><COL NAME=\"QUERY_PWD\">111111</COL></ROW></DBSET>";
-              String xmlParams="吴小龙tefasdfsdafsdfsdfasdfsdafst";
+              String xmlParams="<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+                      "<DBSET><ROW><COL NAME=\"BATCH_NO\">2016061511350912</COL></ROW></DBSET>";
              Object[] obj = {xmlParams};
             HttpURLConnection httpConnection = (HttpURLConnection) _url.openConnection();
             httpConnection.setReadTimeout(20000);
